@@ -1,0 +1,25 @@
+{
+    "name": "unlcms/project-herbie-composer-plugin",
+    "description": "A composer plugin wrapper for packages required at the beginning of an installation.",
+    "type": "composer-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Chris Burge",
+            "role": "Maintainer"
+        }
+    ],
+    "extra": {
+        "class": "unlcms\\Composer\\Plugin\\Dummy"
+    },
+    "autoload": {
+        "psr-4": {
+            "unlcms\\": "src/"
+        }
+    },
+    "require": {
+        "composer-plugin-api": "^1.0.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "symfony/filesystem": "^2.5|^3|^4"
+    }
+}
