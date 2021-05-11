@@ -10,7 +10,7 @@ use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-abstract class Dummy implements PluginInterface
+class Dummy implements PluginInterface
 {
     protected $composer;
     protected $io;
@@ -20,4 +20,17 @@ abstract class Dummy implements PluginInterface
         $this->composer = $composer;
         $this->io = $io;
     }
+
+    public function deactivate(Composer $composer, IOInterface $io)
+    {
+        $this->composer = $composer;
+        $this->io = $io;
+    }
+
+    public function uninstall(Composer $composer, IOInterface $io)
+    {
+        $this->composer = $composer;
+        $this->io = $io;
+    }
+
 }
