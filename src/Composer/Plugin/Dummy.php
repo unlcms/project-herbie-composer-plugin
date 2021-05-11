@@ -10,7 +10,7 @@ use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-class Dummy implements PluginInterface
+abstract class Dummy implements PluginInterface
 {
     protected $composer;
     protected $io;
