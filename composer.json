@@ -20,6 +20,6 @@
     "require": {
         "composer-plugin-api": "^1.0 || ^2.0",
         "webflo/drupal-finder": "^1.0.0",
-        "symfony/filesystem": "^2.5|^3|^4"
+        "symfony/filesystem": "^2.5|^3|^4|^6"
     }
 }
